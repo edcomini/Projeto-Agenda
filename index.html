@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-calendario.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+    <script src="js/jquery-3.6.2.js"></script> 
+
+    <title>Agenda</title>
+</head>
+<body>
+
+    
+    <header>
+        <div class="cabecalho">
+            <h1><img src="agenda.png" alt="" class="img-agenda"></h1>
+            <h2>Agenda Pessoal</h2>
+        </div>      
+    </header>
+
+    
+    <main>
+        <div class="formulario">
+        <form action="">
+            <label for="data">Data</label>
+            <input type="date" id="data" class="input-agenda" placeholder="dia/mês/ano">
+            <label for="horario">Horário</label>
+            <input type="time" id="horario" class="input-agenda" placeholder="horas:minutos">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" class="input-agenda-desc-end" placeholder="Digite o endereço">
+            <label for="descricacao">Descrição</label>
+            <textarea type="text"  id="descricao" cols="70" rows="10" class="input-agenda-desc-end" placeholder="Descreva seu compromisso aqui"></textarea> 
+            <!--<input  type="submit" value="Salvar Agenda" class="btn-salvar" > -->
+        </form>
+
+            <button class="btn-salvar"> Salvar Agenda</button>
+            <button class="btn-salvar"> Alterar Agenda</button> 
+            <button class="btn-salvar"> Excluir Agenda</button>     
+        </div>
+        
+
+        <div class="secao-calendario">
+
+             <div class="wrapper">
+                <div>
+                    <p class="current-date"></p>
+                    <div class="icons">
+                    <span id="prev" class="material-symbols-outlined">chevron_left</span>
+                    <span id="next" class="material-symbols-outlined">chevron_right</span>              
+                    </div>
+                </div>
+                <div class="calendar">
+                    <ul class="weeks" id="a">
+                        <li>Dom</li>
+                        <li>Seg</li>
+                        <li>Ter</li>
+                        <li>Qua</li>
+                        <li>Qui</li>
+                        <li>Sex</li>
+                        <li>Sab</li>
+                    </ul>
+                    <ul class="days">
+                        
+                    </ul>
+                </div>
+            </div> 
+            <div class="iconeFechar" id="fechar">
+
+            </div>
+            <div class="compromisso">
+                <div class="scroll-compromisso">
+                    <ul class="lista-compromisso">
+                   
+                    </ul>
+                </div>
+           </div>
+       </div> 
+
+       <!--IFRAME ESTÁ DANDO ERRO-->
+       <!--
+        <div class="mapa">
+            <h3>Localização do Compromisso</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.402762580929!2d-46.64114928502235!3d-23.553973984686532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ac2db9323b%3A0x609587f981354a4e!2sR.%20Aguiar%20de%20Barros%2C%2036%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001316-020!5e0!3m2!1spt-BR!2sbr!4v1668561168670!5m2!1spt-BR!2sbr"
+             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        -->
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;Copyright Edson Comini - 2022</p>
+    </footer>
+    
+</body>
+<script src="script.js" defer></script>
+</html>
